@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# uploads
+uploads/
+
+# node
+node_modules/
+
+# env
+.env
+
+# logs
+*.log
+
+# vscode
+.vscode/
+
+# system
+Thumbs.db
