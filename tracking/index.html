@@ -1,36 +1,84 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-require_once '../config/db.php';
+<head>
 
-include '../includes/header.php';
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-$shipment = null;
+    <title>NexFreight Logistics</title>
 
-if (isset($_GET['tracking'])) {
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    $tracking = $_GET['tracking'];
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    $query = mysqli_query($conn,
-        "SELECT * FROM shipments
-         WHERE tracking_number='$tracking'");
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    $shipment = mysqli_fetch_assoc($query);
-    $history = [];
+    <style>
 
-if ($shipment) {
+        body{
+            font-family:'Inter', sans-serif;
+        }
 
-    $historyQuery = mysqli_query($conn,
-        "SELECT * FROM shipment_history
-         WHERE shipment_id='{$shipment['id']}'
-         ORDER BY created_at DESC");
+    </style>
 
-    while($row = mysqli_fetch_assoc($historyQuery)) {
-        $history[] = $row;
-    }
-}
-}
+</head>
 
-?>
+<body class="bg-slate-950">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-slate-950/70 border-b border-white/10">
+
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="flex flex-col">
+
+            <span class="text-2xl font-black text-white">
+                NexFreight
+            </span>
+
+            <span class="text-xs tracking-[0.3em] text-blue-300 uppercase">
+                Logistics
+            </span>
+
+        </a>
+
+        <!-- NAV -->
+        <nav class="hidden md:flex items-center gap-10">
+
+            <a href="../index.html" class="text-slate-300 hover:text-white transition">
+    Home
+</a>
+
+            <a href="../services/index.html" class="text-slate-300 hover:text-white transition">
+                Services
+            </a>
+
+            <a href="../tracking/index.html" class="text-slate-300 hover:text-white transition">
+                Tracking
+            </a>
+
+            <a href="../contact/index.html" class="text-slate-300 hover:text-white transition">
+                Contact
+            </a>
+
+        </nav>
+
+        <!-- BUTTON -->
+        <a href="#"
+           class="hidden md:inline-flex bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold transition">
+
+            Track Shipment
+
+        </a>
+
+    </div>
+
+</header>
 
 <!-- PREMIUM HERO -->
 <section class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
@@ -102,9 +150,7 @@ if ($shipment) {
 
         </div>
 
-        <?php if(isset($_GET['tracking'])): ?>
-
-            <?php if($shipment): ?>
+    
 
                 <!-- RESULT -->
                 <div class="bg-white/80 backdrop-blur-xl border border-white rounded-[2rem] shadow-2xl p-10 mt-14">
@@ -118,31 +164,12 @@ if ($shipment) {
                             </span>
 
                             <h2 class="text-3xl font-bold mt-2">
-                                <?= $shipment['tracking_number'] ?>
+                                NFX483920
                             </h2>
 
                         </div>
 
-                        <?php
-
-$status = $shipment['shipment_status'];
-
-$progress = 25;
-
-if ($status == 'Processing') {
-    $progress = 25;
-}
-elseif ($status == 'In Transit') {
-    $progress = 60;
-}
-elseif ($status == 'Out For Delivery') {
-    $progress = 85;
-}
-elseif ($status == 'Delivered') {
-    $progress = 100;
-}
-
-?>
+ 
 
 <div class="text-right">
 
@@ -150,21 +177,21 @@ elseif ($status == 'Delivered') {
 
     <span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></span>
 
-    <?= $status ?>
+    In Transit
 
 </span>
 
     <div class="w-64 bg-slate-200 rounded-full h-4 mt-4">
 
         <div class="bg-blue-900 h-4 rounded-full"
-             style="width: <?= $progress ?>%">
+             style="width: 60%">
 
         </div>
 
     </div>
 
     <p class="text-sm text-slate-500 mt-2">
-        Shipment Progress: <?= $progress ?>%
+        Shipment Progress: 60%
     </p>
 
 </div>
@@ -184,27 +211,27 @@ elseif ($status == 'Delivered') {
 
                                 <p>
                                     <strong>Sender:</strong>
-                                    <?= $shipment['sender_name'] ?>
+                                    Peter williams
                                 </p>
 
                                 <p>
                                     <strong>Receiver:</strong>
-                                    <?= $shipment['receiver_name'] ?>
+                                    Michael Johnson
                                 </p>
 
                                 <p>
                                     <strong>Origin:</strong>
-                                    <?= $shipment['origin'] ?>
+                                    Lagos, Nigeria
                                 </p>
 
                                 <p>
                                     <strong>Destination:</strong>
-                                    <?= $shipment['destination'] ?>
+                                    London, United Kingdom
                                 </p>
 
                                 <p>
                                     <strong>Shipping Method:</strong>
-                                    <?= $shipment['shipping_method'] ?>
+                                    Air Freight
                                 </p>
 
                             </div>
@@ -221,7 +248,7 @@ elseif ($status == 'Delivered') {
 
     <div class="flex items-center gap-4">
 
-        <div class="<?= $progress >= 25 ? 'bg-blue-900 text-white' : 'bg-slate-300' ?> w-10 h-10 rounded-full flex items-center justify-center font-bold">
+        <div class="bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">
             ✓
         </div>
 
@@ -233,7 +260,7 @@ elseif ($status == 'Delivered') {
 
     <div class="flex items-center gap-4">
 
-        <div class="<?= $progress >= 60 ? 'bg-blue-900 text-white' : 'bg-slate-300' ?> w-10 h-10 rounded-full flex items-center justify-center font-bold">
+        <div class="bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">
             ✓
         </div>
 
@@ -245,7 +272,7 @@ elseif ($status == 'Delivered') {
 
     <div class="flex items-center gap-4">
 
-        <div class="<?= $progress >= 85 ? 'bg-blue-900 text-white' : 'bg-slate-300' ?> w-10 h-10 rounded-full flex items-center justify-center font-bold">
+        <div class="bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">
             ✓
         </div>
 
@@ -257,7 +284,7 @@ elseif ($status == 'Delivered') {
 
     <div class="flex items-center gap-4">
 
-        <div class="<?= $progress >= 100 ? 'bg-blue-900 text-white' : 'bg-slate-300' ?> w-10 h-10 rounded-full flex items-center justify-center font-bold">
+        <div class="bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">
             ✓
         </div>
 
@@ -272,22 +299,22 @@ elseif ($status == 'Delivered') {
 
                                 <p>
                                     <strong>Current Location:</strong>
-                                    <?= $shipment['current_location'] ?>
+                                    London, United Kingdom
                                 </p>
 
                                 <p>
                                     <strong>Shipment Date:</strong>
-                                    <?= $shipment['shipment_date'] ?>
+                                    June 1, 2026
                                 </p>
 
                                 <p>
                                     <strong>Estimated Delivery:</strong>
-                                    <?= $shipment['estimated_delivery'] ?>
+                                    June 2, 2026
                                 </p>
 
                                 <p>
                                     <strong>Status:</strong>
-                                    <?= $shipment['shipment_status'] ?>
+                                    In Transit
                                 </p>
 
                             </div>
@@ -298,22 +325,7 @@ elseif ($status == 'Delivered') {
 
                 </div>
 
-            <?php else: ?>
-
-                <!-- NOT FOUND -->
-                <div class="bg-red-100 text-red-700 rounded-2xl p-6 mt-10">
-
-                    Tracking number not found.
-
-                </div>
-
-            <?php endif; ?>
-
-        <?php endif; ?>
-
-    </div>
-<?php if($shipment): ?>
-<?php if($shipment): ?>
+           
 
 <!-- LIVE MAP -->
 <section class="py-16 bg-slate-50">
@@ -351,14 +363,14 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 <script>
 
     
-    const latitude = <?= $shipment['latitude'] ?: 6.5244 ?>;
-const longitude = <?= $shipment['longitude'] ?: 3.3792 ?>;
+    const latitude = 51.5072;
+const longitude = -0.1276;
 
-const originLat = <?= $shipment['origin_lat'] ?: 6.5244 ?>;
-const originLng = <?= $shipment['origin_lng'] ?: 3.3792 ?>;
+const originLat = 6.5244;
+const originLng = 3.3792;
 
-const destinationLat = <?= $shipment['destination_lat'] ?: 51.5072 ?>;
-const destinationLng = <?= $shipment['destination_lng'] ?: -0.1276 ?>;
+const destinationLat = 51.5072;
+const destinationLng = -0.1276;
 
 const map = L.map('map').setView([latitude, longitude], 4);
 
@@ -379,7 +391,7 @@ const shipmentMarker = L.marker([latitude, longitude]).addTo(map);
 shipmentMarker.bindPopup(`
     <strong>NexFreight Shipment</strong><br>
     Current Location:<br>
-    <?= $shipment['current_location'] ?>
+    London, United Kingdom
 `).openPopup();
 
 /*
@@ -392,7 +404,7 @@ const originMarker = L.marker([originLat, originLng]).addTo(map);
 
 originMarker.bindPopup(`
     <strong>Origin</strong><br>
-    <?= $shipment['origin'] ?>
+   Lagos, Nigeria
 `);
 
 /*
@@ -405,7 +417,7 @@ const destinationMarker = L.marker([destinationLat, destinationLng]).addTo(map);
 
 destinationMarker.bindPopup(`
     <strong>Destination</strong><br>
-    <?= $shipment['destination'] ?>
+    London, United Kingdom
 `);
 
 /*
@@ -428,7 +440,6 @@ map.fitBounds(route.getBounds());
 
 </script>
 
-<?php endif; ?>
 <!-- TIMELINE -->
 <section class="pb-24 bg-slate-50">
 
@@ -442,7 +453,7 @@ map.fitBounds(route.getBounds());
 
             <div class="space-y-8">
 
-                <?php foreach($history as $item): ?>
+            
 
                     <div class="flex flex-col md:flex-row gap-5">
 
@@ -459,24 +470,24 @@ map.fitBounds(route.getBounds());
                             <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3">
 
                                 <h4 class="text-xl font-bold">
-                                    <?= $item['status_title'] ?>
+                                    Shipment Departed Facility
                                 </h4>
 
                                 <span class="text-slate-600 mt-4 leading-relaxed text-lg">
-                                    <?= date("M d, Y h:i A", strtotime($item['created_at'])) ?>
+                                    Jun 01, 2026 08:45 AM
                                 </span>
 
                             </div>
 
                             <p class="text-slate-600 mt-4 leading-relaxed text-lg">
-                                <?= $item['status_description'] ?>
+                               Shipment successfully departed from the Lagos international cargo facility and is currently in transit.
                             </p>
 
                         </div>
 
                     </div>
 
-                <?php endforeach; ?>
+            
 
             </div>
 
@@ -486,6 +497,44 @@ map.fitBounds(route.getBounds());
 
 </section>
 
-<?php endif; ?>
 
-<?php include '../includes/footer.php'; ?>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 border-t border-white/10 py-12">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <div>
+
+            <h2 class="text-2xl font-black text-white">
+                NexFreight
+            </h2>
+
+            <p class="text-slate-400 mt-2">
+                Premium Global Logistics Solutions
+            </p>
+
+        </div>
+
+        <div class="flex items-center gap-8 text-slate-400">
+
+            <a href="../index.html" class="hover:text-white transition">
+                Home
+            </a>
+
+            <a href="../services/index.html" class="hover:text-white transition">
+                Services
+            </a>
+
+            <a href="../contact/index.html" class="hover:text-white transition">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

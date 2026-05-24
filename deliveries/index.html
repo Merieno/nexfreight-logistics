@@ -1,9 +1,3 @@
-<?php
-require_once '../config/db.php';
-
-$result = mysqli_query($conn,
-"SELECT * FROM shipments ORDER BY id DESC");
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -89,47 +83,83 @@ security, and reliability.
 
 <tbody>
 
-<?php while($shipment = mysqli_fetch_assoc($result)): ?>
-
 <tr class="border-b hover:bg-gray-50">
 
 <td class="p-5 font-semibold">
-<?php echo $shipment['tracking_number']; ?>
+NFX483920
 </td>
 
 <td class="p-5">
-<?php echo $shipment['receiver_name']; ?>
+Michael Johnson
 </td>
 
 <td class="p-5">
-<?php echo $shipment['destination']; ?>
+London, United Kingdom
 </td>
 
 <td class="p-5">
-
-<?php
-$status = $shipment['shipment_status'];
-
-if ($status == 'Delivered') {
-echo "<span class='bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm'>Delivered</span>";
-}
-elseif ($status == 'In Transit') {
-echo "<span class='bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm'>In Transit</span>";
-}
-else {
-echo "<span class='bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm'>$status</span>";
-}
-?>
-
+<span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">
+In Transit
+</span>
 </td>
 
 <td class="p-5">
-<?php echo $shipment['estimated_delivery']; ?>
+June 2, 2026
 </td>
 
 </tr>
 
-<?php endwhile; ?>
+<tr class="border-b hover:bg-gray-50">
+
+<td class="p-5 font-semibold">
+NFX920184
+</td>
+
+<td class="p-5">
+Sarah Williams
+</td>
+
+<td class="p-5">
+Toronto, Canada
+</td>
+
+<td class="p-5">
+<span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+Delivered
+</span>
+</td>
+
+<td class="p-5">
+May 28, 2026
+</td>
+
+</tr>
+
+<tr class="border-b hover:bg-gray-50">
+
+<td class="p-5 font-semibold">
+NFX293741
+</td>
+
+<td class="p-5">
+Daniel Smith
+</td>
+
+<td class="p-5">
+Dubai, UAE
+</td>
+
+<td class="p-5">
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+Processing
+</span>
+</td>
+
+<td class="p-5">
+June 6, 2026
+</td>
+
+</tr>
 
 </tbody>
 

@@ -1,18 +1,24 @@
 # NexFreight Logistics
 
-Premium logistics and shipment tracking platform built with PHP & MySQL.
+Premium logistics and shipment tracking platform built with PHP, MySQL, and Tailwind CSS.
+
+---
 
 ## Features
 
-- Shipment tracking system
+- Real-time shipment tracking
 - Admin dashboard
-- Quote management
+- Quote management system
 - Shipment history updates
-- PDF export system
+- Delivery timeline system
+- Live shipment map
+- PDF export support
 - Customer tracking portal
 - Responsive luxury UI
-- Mobile optimized
+- Mobile optimized design
 - Secure authentication system
+
+---
 
 ## Tech Stack
 
@@ -23,6 +29,8 @@ Premium logistics and shipment tracking platform built with PHP & MySQL.
 - HTML5
 - CSS3
 
+---
+
 ## Modules
 
 - Admin Panel
@@ -31,6 +39,8 @@ Premium logistics and shipment tracking platform built with PHP & MySQL.
 - Shipment Management
 - Delivery History
 - Customer Portal
+
+---
 
 ## Installation
 
