@@ -29,11 +29,12 @@ https://merieno.github.io/nexfreight-logistics/
 ## Developer
 
 Oguname Terence Merieno  
-Founder — RienoTech  
+Founder — Merieno  
 Web Developer  
-Lagos, Nigeria
+Lagos. 
 
 ## Contact
+Email: mhe.terrence@gmail.com
 
 GitHub: https://github.com/Merieno
 
