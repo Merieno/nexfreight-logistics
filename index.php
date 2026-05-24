@@ -1,0 +1,552 @@
+<?php include 'includes/header.php'; ?>
+
+<!-- PREMIUM HERO -->
+<section class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
+
+    <!-- BACKGROUND GLOW -->
+    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-600/20 blur-3xl rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/20 blur-3xl rounded-full"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 py-28">
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <!-- LEFT -->
+            <div>
+
+                <!-- BADGE -->
+                <div class="inline-flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur-xl px-5 py-3 rounded-full">
+
+                    <span class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+
+                    <span class="text-sm tracking-wide text-blue-100">
+                        Trusted Global Freight Platform
+                    </span>
+
+                </div>
+
+                <!-- TITLE -->
+                <h1 class="text-5xl md:text-7xl font-black leading-tight mt-8">
+
+                    Smart Logistics
+                    <span class="text-blue-400">
+                        For Modern
+                    </span>
+                    Global Shipping
+
+                </h1>
+
+                <!-- DESCRIPTION -->
+                <p class="mt-8 text-xl text-slate-300 leading-relaxed max-w-2xl">
+
+                    NexFreight helps businesses move cargo worldwide with
+                    premium logistics technology, real-time shipment tracking,
+                    and enterprise freight management solutions.
+
+                </p>
+
+                <!-- BUTTONS -->
+                <div class="flex flex-wrap gap-5 mt-10">
+
+                    <a href="tracking/"
+                       class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-semibold transition shadow-2xl shadow-blue-500/30">
+
+                        Track Shipment
+
+
+                    </a>
+
+                </div>
+
+                <!-- STATS -->
+                <div class="grid grid-cols-3 gap-8 mt-16">
+
+                    <div>
+
+                        <h2 class="text-4xl font-black text-blue-400">
+                            15K+
+                        </h2>
+
+                        <p class="text-slate-400 mt-2">
+                            Deliveries
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="text-4xl font-black text-cyan-400">
+                            120+
+                        </h2>
+
+                        <p class="text-slate-400 mt-2">
+                            Countries
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="text-4xl font-black text-green-400">
+                            99%
+                        </h2>
+
+                        <p class="text-slate-400 mt-2">
+                            Satisfaction
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="relative">
+
+                <!-- MAIN CARD -->
+                <div class="bg-white/10 border border-white/10 backdrop-blur-2xl rounded-[2rem] p-8 shadow-2xl">
+
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1200"
+                         class="rounded-2xl h-[500px] w-full object-cover"
+                         alt="Logistics">
+
+                </div>
+
+                
+        </div>
+
+    </div>
+
+</section>
+
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="relative">
+
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200"
+                 class="rounded-2xl shadow-2xl w-full object-cover"
+                 alt="Logistics">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- PREMIUM SERVICES -->
+<section class="relative py-28 bg-slate-50 overflow-hidden">
+
+    <!-- BACKGROUND -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.08),transparent_30%)]"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <!-- HEADING -->
+        <div class="text-center max-w-3xl mx-auto">
+
+            <span class="inline-flex items-center bg-blue-100 text-blue-700 px-5 py-2 rounded-full text-sm font-semibold">
+
+                Our Services
+
+            </span>
+
+            <h2 class="text-5xl font-black text-slate-900 mt-8 leading-tight">
+
+                Enterprise Logistics
+                Solutions Built
+                For Global Trade
+
+            </h2>
+
+            <p class="text-slate-600 text-xl leading-relaxed mt-6">
+
+                NexFreight provides modern freight management solutions
+                designed for speed, visibility, reliability, and global shipping efficiency.
+
+            </p>
+
+        </div>
+
+        <!-- CARDS -->
+        <div class="grid lg:grid-cols-3 gap-8 mt-20">
+
+            <!-- CARD -->
+            <div class="group bg-white/70 backdrop-blur-xl border border-white rounded-[2rem] p-10 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
+
+                <!-- ICON -->
+                <div class="w-20 h-20 rounded-3xl bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center justify-center text-4xl shadow-lg shadow-blue-500/30">
+
+                    🚚
+
+                </div>
+
+                <h3 class="text-3xl font-black text-slate-900 mt-10">
+
+                    Road Freight
+
+                </h3>
+
+                <p class="text-slate-600 leading-relaxed mt-6 text-lg">
+
+                    Secure and efficient ground logistics solutions
+                    for regional and nationwide cargo transportation.
+
+                </p>
+
+                <div class="mt-10">
+
+                    <a href="#"
+                       class="inline-flex items-center gap-3 text-blue-700 font-semibold group-hover:gap-5 transition-all duration-300">
+
+                        Learn More →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="group bg-white/70 backdrop-blur-xl border border-white rounded-[2rem] p-10 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
+
+                <!-- ICON -->
+                <div class="w-20 h-20 rounded-3xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center text-4xl shadow-lg shadow-cyan-500/30">
+
+                    ✈️
+
+                </div>
+
+                <h3 class="text-3xl font-black text-slate-900 mt-10">
+
+                    Air Freight
+
+                </h3>
+
+                <p class="text-slate-600 leading-relaxed mt-6 text-lg">
+
+                    Fast-track international air cargo services
+                    designed for urgent and time-sensitive deliveries.
+
+                </p>
+
+                <div class="mt-10">
+
+                    <a href="#"
+                       class="inline-flex items-center gap-3 text-blue-700 font-semibold group-hover:gap-5 transition-all duration-300">
+
+                        Learn More →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="group bg-white/70 backdrop-blur-xl border border-white rounded-[2rem] p-10 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-500">
+
+                <!-- ICON -->
+                <div class="w-20 h-20 rounded-3xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white flex items-center justify-center text-4xl shadow-lg shadow-indigo-500/30">
+
+                    🚢
+
+                </div>
+
+                <h3 class="text-3xl font-black text-slate-900 mt-10">
+
+                    Ocean Freight
+
+                </h3>
+
+                <p class="text-slate-600 leading-relaxed mt-6 text-lg">
+
+                    Scalable global sea freight operations
+                    for container shipping and international trade logistics.
+
+                </p>
+
+                <div class="mt-10">
+
+                    <a href="#"
+                       class="inline-flex items-center gap-3 text-blue-700 font-semibold group-hover:gap-5 transition-all duration-300">
+
+                        Learn More →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- WHY CHOOSE US -->
+<section class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- IMAGE -->
+        <div>
+
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1200"
+                 alt="Logistics Team"
+                 class="rounded-2xl shadow-2xl">
+
+        </div>
+
+        <!-- CONTENT -->
+        <div>
+
+            <span class="text-blue-700 font-semibold uppercase tracking-wider">
+                Why Choose Us
+            </span>
+
+            <h2 class="text-4xl font-bold mt-4 leading-tight">
+                Modern Logistics Solutions Built For Speed & Reliability
+            </h2>
+
+            <p class="text-gray-600 mt-6 leading-relaxed">
+                NexFreight combines technology, experience, and global
+                logistics expertise to ensure every shipment arrives safely,
+                quickly, and professionally.
+            </p>
+
+            <!-- FEATURES -->
+            <div class="mt-10 space-y-6">
+
+                <div class="flex gap-4">
+
+                    <div class="text-3xl">
+                        ✅
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-xl">
+                            Real-Time Tracking
+                        </h3>
+
+                        <p class="text-gray-600 mt-2">
+                            Monitor shipments anytime with live tracking updates.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex gap-4">
+
+                    <div class="text-3xl">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-xl">
+                            Fast Delivery
+                        </h3>
+
+                        <p class="text-gray-600 mt-2">
+                            Optimized logistics systems for quicker shipping.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex gap-4">
+
+                    <div class="text-3xl">
+                        🔒
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-xl">
+                            Secure Cargo Handling
+                        </h3>
+
+                        <p class="text-gray-600 mt-2">
+                            Professional cargo protection and safety standards.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- TRACKING SECTION -->
+<section class="py-24 bg-gray-100">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <span class="text-blue-700 font-semibold uppercase tracking-wider">
+            Shipment Tracking
+        </span>
+
+        <h2 class="text-4xl font-bold mt-4">
+            Track Your Shipment
+        </h2>
+
+        <p class="text-gray-600 mt-4">
+            Enter your tracking ID below to monitor your shipment status.
+        </p>
+
+        <!-- TRACKING BOX -->
+        <div class="bg-white shadow-xl rounded-2xl p-6 mt-10 flex flex-col md:flex-row gap-4">
+
+            <input type="text"
+                   placeholder="Enter Tracking Number"
+                   class="flex-1 border border-gray-300 rounded-lg px-5 py-4 outline-none focus:border-blue-600">
+
+            <button class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold transition">
+                Track Now
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- TESTIMONIALS -->
+<section class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- HEADING -->
+        <div class="text-center mb-16">
+
+            <span class="text-blue-700 font-semibold uppercase tracking-wider">
+                Testimonials
+            </span>
+
+            <h2 class="text-4xl font-bold mt-4">
+                What Our Clients Say
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                Businesses and individuals trust NexFreight for reliable,
+                fast, and secure shipping solutions.
+            </p>
+
+        </div>
+
+        <!-- CARDS -->
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- CARD -->
+            <div class="bg-gray-100 p-8 rounded-2xl">
+
+                <div class="text-yellow-500 text-2xl mb-4">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    NexFreight handled our international shipments smoothly.
+                    Their tracking system and delivery speed are excellent.
+                </p>
+
+                <div class="mt-6">
+                    <h4 class="font-bold">
+                        Michael Johnson
+                    </h4>
+
+                    <span class="text-gray-500 text-sm">
+                        Import Business Owner
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="bg-gray-100 p-8 rounded-2xl">
+
+                <div class="text-yellow-500 text-2xl mb-4">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    Professional service from start to finish. My cargo
+                    arrived safely and on time.
+                </p>
+
+                <div class="mt-6">
+                    <h4 class="font-bold">
+                        Sarah Williams
+                    </h4>
+
+                    <span class="text-gray-500 text-sm">
+                        E-commerce Entrepreneur
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="bg-gray-100 p-8 rounded-2xl">
+
+                <div class="text-yellow-500 text-2xl mb-4">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    One of the best logistics companies we’ve worked with.
+                    Fast communication and reliable delivery.
+                </p>
+
+                <div class="mt-6">
+                    <h4 class="font-bold">
+                        Daniel Smith
+                    </h4>
+
+                    <span class="text-gray-500 text-sm">
+                        Supply Chain Manager
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- CTA SECTION -->
+<section class="py-24 bg-blue-900 text-white">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <h2 class="text-5xl font-bold leading-tight">
+            Ready To Ship With NexFreight?
+        </h2>
+
+        <p class="mt-6 text-blue-100 text-lg leading-relaxed">
+            Let us help you move your cargo quickly, securely,
+            and professionally anywhere in the world.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+
+    <a href="<?= BASE_URL ?>contact/"
+       class="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-200 transition">
+
+        Get Started
+
+    </a>
+
+    <a href="<?= BASE_URL ?>contact/"
+       class="border border-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-900 transition">
+
+        Contact Us
+
+    </a>
+
+</div>
+
+</section>
+<?php include 'includes/footer.php'; ?>
