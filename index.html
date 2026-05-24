@@ -32,7 +32,7 @@
 <!-- NAVBAR -->
 <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-slate-950/70 border-b border-white/10">
 
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-5 flex items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-5 flex items-center justify-between">
 
         <!-- LOGO -->
         <a href="/nexfreight-logistics/index.html" class="flex flex-col">
@@ -47,38 +47,37 @@
 
         </a>
 
-        <!-- NAV -->
-<nav class="flex items-center gap-4 md:gap-10 text-sm md:text-base">
+        <!-- DESKTOP NAV -->
+        <nav class="hidden md:flex items-center gap-10">
 
-    <a href="/nexfreight-logistics/index.html"
-       class="text-slate-300 hover:text-white transition">
-        Home
-    </a>
+            <a href="/nexfreight-logistics/index.html"
+               class="text-slate-300 hover:text-white transition">
+                Home
+            </a>
 
-    <a href="/nexfreight-logistics/about/index.html"
-       class="text-slate-300 hover:text-white transition">
-        About
-    </a>
+            <a href="/nexfreight-logistics/about/index.html"
+               class="text-slate-300 hover:text-white transition">
+                About
+            </a>
 
-    <a href="/nexfreight-logistics/services/index.html"
-       class="text-slate-300 hover:text-white transition">
-        Services
-    </a>
+            <a href="/nexfreight-logistics/services/index.html"
+               class="text-slate-300 hover:text-white transition">
+                Services
+            </a>
 
-    <a href="/nexfreight-logistics/tracking/index.html"
-       class="text-slate-300 hover:text-white transition">
-        Tracking
-    </a>
+            <a href="/nexfreight-logistics/tracking/index.html"
+               class="text-slate-300 hover:text-white transition">
+                Tracking
+            </a>
 
-    <a href="/nexfreight-logistics/contact/index.html"
-       class="text-slate-300 hover:text-white transition">
-        Contact
-    </a>
+            <a href="/nexfreight-logistics/contact/index.html"
+               class="text-slate-300 hover:text-white transition">
+                Contact
+            </a>
 
-</nav>
-    
+        </nav>
 
-        <!-- BUTTON -->
+        <!-- DESKTOP BUTTON -->
         <a href="/nexfreight-logistics/tracking/index.html"
            class="hidden md:inline-flex bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold transition">
 
@@ -86,9 +85,66 @@
 
         </a>
 
+        <!-- MOBILE MENU BUTTON -->
+        <button id="menu-btn"
+                class="md:hidden text-white text-3xl">
+
+            ☰
+
+        </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu"
+         class="hidden md:hidden bg-slate-900 border-t border-white/10">
+
+        <div class="flex flex-col px-6 py-6 space-y-5">
+
+            <a href="/nexfreight-logistics/index.html"
+               class="text-slate-300 hover:text-white">
+                Home
+            </a>
+
+            <a href="/nexfreight-logistics/about/index.html"
+               class="text-slate-300 hover:text-white">
+                About
+            </a>
+
+            <a href="/nexfreight-logistics/services/index.html"
+               class="text-slate-300 hover:text-white">
+                Services
+            </a>
+
+            <a href="/nexfreight-logistics/tracking/index.html"
+               class="text-slate-300 hover:text-white">
+                Tracking
+            </a>
+
+            <a href="/nexfreight-logistics/contact/index.html"
+               class="text-slate-300 hover:text-white">
+                Contact
+            </a>
+
+        </div>
+
     </div>
 
 </header>
+
+<!-- MENU SCRIPT -->
+<script>
+
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+
+    mobileMenu.classList.toggle('hidden');
+
+});
+
+</script>
 
 <!-- PREMIUM HERO -->
 <section class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
