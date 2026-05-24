@@ -1,48 +1,43 @@
 # NexFreight Logistics
 
-Premium logistics and shipment tracking platform built with PHP, MySQL, and Tailwind CSS.
+A premium logistics and shipment tracking platform concept built as a frontend and full-stack logistics web project.
 
----
+## Project Overview
 
-## Features
+NexFreight is a modern logistics website featuring:
 
-- Real-time shipment tracking
-- Admin dashboard
-- Quote management system
-- Shipment history updates
-- Delivery timeline system
-- Live shipment map
-- PDF export support
-- Customer tracking portal
-- Responsive luxury UI
-- Mobile optimized design
-- Secure authentication system
+- Shipment tracking UI
+- Delivery management dashboard
+- Responsive mobile navigation
+- Freight service pages
+- Shipment progress system
+- Live tracking interface
+- Modern luxury logistics branding
 
----
+## Live Preview
 
-## Tech Stack
+https://merieno.github.io/nexfreight-logistics/
 
+## Built With
+
+- HTML5
+- Tailwind CSS
+- JavaScript
 - PHP
 - MySQL
-- JavaScript
-- Tailwind CSS
-- HTML5
-- CSS3
 
----
+## Developer
 
-## Modules
+Oguname Terence Merieno  
+Founder — RienoTech  
+Web Developer  
+Lagos, Nigeria
 
-- Admin Panel
-- Tracking System
-- Quote Requests
-- Shipment Management
-- Delivery History
-- Customer Portal
+## Contact
 
----
+GitHub: https://github.com/Merieno
 
-## Installation
+Portfolio: https://www.behance.net/Merieno
 
-```bash
-git clone https://github.com/Merieno/nexfreight-logistics.git
+Live Demo:
+https://merieno.github.io/nexfreight-logistics/
