@@ -32,10 +32,10 @@
 <!-- NAVBAR -->
 <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-slate-950/70 border-b border-white/10">
 
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-5 flex items-center justify-between">
 
         <!-- LOGO -->
-        <a href="../index.html" class="flex flex-col">
+        <a href="/nexfreight-logistics/index.html" class="flex flex-col">
 
             <span class="text-2xl font-black text-white">
                 NexFreight
@@ -47,61 +47,104 @@
 
         </a>
 
-        <!-- NAV -->
+        <!-- DESKTOP NAV -->
         <nav class="hidden md:flex items-center gap-10">
 
-            <a href="../index.html" class="text-slate-300 hover:text-white transition">
-    Home
-</a>
+            <a href="/nexfreight-logistics/index.html"
+               class="text-slate-300 hover:text-white transition">
+                Home
+            </a>
 
-            <a href="../services/index.html" class="text-slate-300 hover:text-white transition">
+            <a href="/nexfreight-logistics/about/index.html"
+               class="text-slate-300 hover:text-white transition">
+                About
+            </a>
+
+            <a href="/nexfreight-logistics/services/index.html"
+               class="text-slate-300 hover:text-white transition">
                 Services
             </a>
 
-            <a href="../tracking/index.html" class="text-slate-300 hover:text-white transition">
+            <a href="/nexfreight-logistics/tracking/index.html"
+               class="text-slate-300 hover:text-white transition">
                 Tracking
             </a>
 
-            <a href="../contact/index.html" class="text-slate-300 hover:text-white transition">
+            <a href="/nexfreight-logistics/contact/index.html"
+               class="text-slate-300 hover:text-white transition">
                 Contact
             </a>
 
         </nav>
 
-        <!-- BUTTON -->
-        <a href="#"
+        <!-- DESKTOP BUTTON -->
+        <a href="/nexfreight-logistics/tracking/index.html"
            class="hidden md:inline-flex bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold transition">
 
             Track Shipment
 
         </a>
 
+        <!-- MOBILE MENU BUTTON -->
+        <button id="menu-btn"
+                class="md:hidden text-white text-3xl">
+
+            ☰
+
+        </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu"
+         class="hidden md:hidden bg-slate-900 border-t border-white/10">
+
+        <div class="flex flex-col px-6 py-6 space-y-5">
+
+            <a href="/nexfreight-logistics/index.html"
+               class="text-slate-300 hover:text-white">
+                Home
+            </a>
+
+            <a href="/nexfreight-logistics/about/index.html"
+               class="text-slate-300 hover:text-white">
+                About
+            </a>
+
+            <a href="/nexfreight-logistics/services/index.html"
+               class="text-slate-300 hover:text-white">
+                Services
+            </a>
+
+            <a href="/nexfreight-logistics/tracking/index.html"
+               class="text-slate-300 hover:text-white">
+                Tracking
+            </a>
+
+            <a href="/nexfreight-logistics/contact/index.html"
+               class="text-slate-300 hover:text-white">
+                Contact
+            </a>
+
+        </div>
+
     </div>
 
 </header>
 
-<!-- HERO -->
-<section class="bg-blue-900 text-white pt-40 pb-24">
+<!-- MENU SCRIPT -->
+<script>
 
-    <div class="max-w-7xl mx-auto px-6 text-center">
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
 
-        <span class="uppercase tracking-widest text-blue-200 font-semibold">
-            About NexFreight
-        </span>
+menuBtn.addEventListener('click', () => {
 
-        <h1 class="text-5xl font-bold mt-6">
-            Powering Modern Logistics Worldwide
-        </h1>
+    mobileMenu.classList.toggle('hidden');
 
-        <p class="max-w-3xl mx-auto mt-6 text-blue-100 text-lg leading-relaxed">
-            NexFreight delivers reliable freight and logistics solutions
-            for businesses and individuals with speed, professionalism,
-            and global reach.
-        </p>
+});
 
-    </div>
-
-</section>
+</script>
 
 <!-- ABOUT CONTENT -->
 <section class="py-24 bg-white">
